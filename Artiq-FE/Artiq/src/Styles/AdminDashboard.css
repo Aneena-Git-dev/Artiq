@@ -1,0 +1,18 @@
+.admin-dashboard {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.admin-dashboard h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.admin-dashboard ul {
+  padding: 0;
+}
+
+.admin-dashboard li {
+  list-style: none;
+}

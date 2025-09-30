@@ -1,0 +1,157 @@
+/* ================= NAVBAR ================== */
+.navbar-brand {
+  font-size: 2.5rem;
+}
+
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  transition: all 0.3s ease;
+  font-family: 'Playfair Display', serif;
+  z-index: 1000;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.nav-links .nav-link {
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-links .nav-link:hover {
+  color: #ff5e57;
+}
+
+.icon-links .nav-icon {
+  color: #555;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.icon-links .nav-icon:hover {
+  color: #ff5e57;
+}
+
+/* Dropdown Box Styling */
+.dropdown-box {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  z-index: 999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  display: none; /* Hide by default */
+}
+
+.dropdown-box.show {
+  display: block; /* Show when active */
+}
+
+.dropdown-link {
+  display: block;
+  padding: 10px 16px;
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-link:hover {
+  background-color: #f2f2f2;
+  color: #ff5e57;
+}
+
+.dropdown-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  background: white;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-item:hover {
+  background-color: #f2f2f2;
+}
+
+/* ================== CART BADGE ================== */
+.cart-count {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  background-color: #b54668;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.cart-count-mobile {
+  background-color: #b54668;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-left: 6px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* ================== WISHLIST BADGE ================== */
+.wishlist-count {
+  position: absolute;
+  top: 8px;
+  right: -10px;
+  background-color: #b54668; /* Same theme as cart */
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.wishlist-count-mobile {
+  background-color: #b54668;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-left: 6px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* ================== WISHLIST BUTTON ================== */
+.love-btn {
+  background-color: #f8d7da; /* light pink */
+  color: #b54668;
+  border: 1px solid #b54668;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.love-btn:hover {
+  background-color: #b54668;
+  color: white;
+}
+
+.love-btn.active {
+  background-color: #b54668;
+  color: white;
+  border: 1px solid #b54668;
+}

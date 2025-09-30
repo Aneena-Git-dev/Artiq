@@ -1,0 +1,49 @@
+/* .auth-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #f7eded);
+}
+
+.auth-box {
+  width: 400px;
+  background-color: #fff;
+} */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa, #f7eded); /* pink theme */
+  font-family: 'Poppins', sans-serif;
+}
+
+.auth-box {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.btn-pink {
+  background-color: #e7839c;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: #e67a98;
+  color: #fff;
+}
+
+.toggle-text {
+  color: #ff4d79;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: -10px; /* keep it close but on next line */
+}
+.form-control{
+  margin-bottom: 10px;
+}

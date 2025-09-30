@@ -1,0 +1,192 @@
+.about-page {
+  font-family: 'Poppins', sans-serif;
+  /* background: #f9f9f9; */
+}
+
+/* Hero background with text overlay */
+.about-hero-bg {
+  background-image: url('src/assets/images/breadcrumb.webp'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  position: relative;
+
+}
+
+.about-hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.about-hero-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Staggered Rows */
+.about-staggered {
+  margin: 60px auto;
+  max-width: 1100px;
+}
+
+.about-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.about-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-img-staggered {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 70px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #222;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Full Background Section for Video Placeholder */
+/* .about-fullbg-section {
+  background-image: url('src/assets/images/breadcrumb01.webp'); 
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+} */
+
+.about-fullbg-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+/* Final Section */
+.about-final {
+  max-width: 1100px;
+  margin: 60px auto;
+}
+
+.about-final-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-final-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.about-final-text h2 {
+  font-size: 2rem;
+  color: #222;
+}
+
+.about-final-text p {
+  color: #555;
+}
+
+.about-final-text ul {
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.about-final-text li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  color: #444;
+}
+
+.about-final-text .icon {
+  color: #c0392b;
+  margin-right: 10px;
+}
+.about-fullbg-section {
+  position: relative;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* Default for large screens */
+  object-position: center;
+  z-index: 1;
+  background-color: black;
+}
+
+/* On smaller screens: show full video without cropping */
+@media (max-width: 768px) {
+  .background-video {
+    object-fit: contain;
+  }
+}
+
+
+/* Overlay that centers content vertically and horizontally */
+.about-fullbg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Optional dark overlay */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-fullbg-overlay h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-fullbg-overlay p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}

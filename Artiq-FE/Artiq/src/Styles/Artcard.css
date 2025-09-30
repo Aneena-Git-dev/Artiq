@@ -1,0 +1,44 @@
+.art-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    text-align: center;
+    transition: 0.3s ease;
+    font-size: 20px;
+  }
+  
+  .art-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .art-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .art-title {
+    font-size: 1.1rem;
+    margin: 10px 0 4px;
+    font-weight: 600;
+  }
+  
+  .art-price {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+  
+  .add-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-btn:hover {
+    background-color: #333;
+  }

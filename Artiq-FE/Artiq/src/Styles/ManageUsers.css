@@ -1,0 +1,51 @@
+.manage-users-container {
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+  background: #f9f9fb;
+  min-height: 100vh;
+}
+
+.manage-users-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.users-table th,
+.users-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.users-table th {
+  background: #4c6ef5;
+  color: #fff;
+}
+
+.users-table tr:hover {
+  background: #f1f5ff;
+}
+
+.delete-btn {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #c1121f;
+}

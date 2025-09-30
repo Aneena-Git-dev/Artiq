@@ -1,0 +1,354 @@
+/* =========================
+   Grid and List View Layouts
+   ========================= */
+.gallery-grid.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.gallery-grid.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* =========================
+   Gallery Header
+   ========================= */
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Sort Dropdown */
+.sort-box {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Toggle Button Icons */
+.toggle-btn i {
+  width: 50px;
+  margin-left: 5px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.toggle-btn.active i {
+  color: rgb(202, 99, 116);
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+/* =========================
+   Artwork Card Styling
+   ========================= */
+.art-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: auto; /* ensures even card height */
+  min-height: 350px;
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.art-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Artwork Image (uniform size) */
+/* Artwork Image Wrapper */
+.art-img {
+  width: 100%;
+  height: 220px;           /* fixed height for all images */
+  object-fit: cover;       /* crops instead of squishing */
+  border-radius: 8px;
+  display: block;
+  background-color: #f8f8f8; /* placeholder bg if img is small */
+}
+
+
+/* Title & Price */
+.art-title {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.art-price {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* =========================
+   Buttons Section
+   ========================= */
+.card-buttons {
+  margin-top: auto; /* pushes to bottom */
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+/* Add to Cart & Wishlist (Unified Pink Theme) */
+.add-btn,
+.wishlist-btn {
+  background-color: pink !important;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: white !important;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1;
+  text-align: center;
+}
+
+.add-btn:hover,
+.wishlist-btn:hover {
+  background-color: rgb(219, 112, 130) !important;
+}
+
+/* Wishlist Active State */
+.wishlist-btn.active {
+  background-color: rgb(194, 77, 97) !important;
+}
+
+/* =========================
+   List View Styling
+   ========================= */
+.art-card.list {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.art-card.list img {
+  flex-shrink: 0;
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.art-card.list .art-title,
+.art-card.list .art-price,
+.art-card.list .card-buttons {
+  margin: 0;
+}
+
+/* =========================
+   Delete Button
+   ========================= */
+.delete-btn {
+  margin-left: 10px;
+  background-color: transparent;
+  color: pink;
+  border: 1px solid rgb(201, 92, 110);
+  border-radius: 5px;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: rgb(209, 89, 109);
+  color: white;
+}
+
+/* =========================
+   Extra Buttons
+   ========================= */
+.extra-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.extra-buttons button {
+  border: none;
+  background: #f4f4f4;
+  padding: 6px 12px;
+  border-radius: 5px;
+  color: #333;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.extra-buttons button:hover {
+  background-color: #ddd;
+}
+
+/* =========================
+   Hover Icons (Like, Cart, etc.)
+   ========================= */
+.hover-icons {
+  position: absolute;
+  top: 10%;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.art-card:hover .hover-icons {
+  opacity: 1;
+}
+
+.hover-icons .icon-btn {
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  color: rgb(202, 95, 113);
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.icon-count {
+  font-size: 12px;
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background: white;
+  padding: 2px 5px;
+  border-radius: 8px;
+  color: rgb(185, 64, 84);
+}
+
+/* =========================
+   Comment Modal
+   ========================= */
+.comment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.comment-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.comment-box textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  resize: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.comment-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Inline comment box */
+.comment-box-inline {
+  margin-top: 10px;
+  background-color: #f8f9fa;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.comment-input {
+  width: 70%;
+  padding: 6px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comment-submit {
+  padding: 6px 12px;
+  background-color: pink;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.comment-list {
+  margin-top: 8px;
+}
+
+.comment-text {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+/* =========================
+   Responsive Design
+   ========================= */
+@media (max-width: 992px) {
+  .gallery-grid.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-grid.grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sort-box {
+    margin-left: 0;
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .toggle-btn i {
+    width: 40px;
+    font-size: 1rem;
+  }
+
+  .card-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .add-btn,
+  .wishlist-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

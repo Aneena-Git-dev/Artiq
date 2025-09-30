@@ -1,0 +1,62 @@
+/* General container for the upload page */
+.upload-page {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f7fa, #f7eded);
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Image preview section */
+.preview {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.preview-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Input fields for the upload page */
+.upload-page input,
+.upload-page textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.upload-page textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+/* Button for the upload page */
+.upload-page button {
+  width: 100%;
+  padding: 12px;
+  background-color: pink;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.upload-page button:hover {
+  background-color: rgb(219, 127, 142);
+}
+
+/* Optional: For labels */
+.upload-page label {
+  font-weight: bold;
+  font-size: 1.1rem;
+}

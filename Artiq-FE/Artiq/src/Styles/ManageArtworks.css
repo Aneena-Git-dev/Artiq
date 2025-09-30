@@ -1,0 +1,97 @@
+.manage-artworks-container {
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+  background: #f9f9fb;
+  min-height: 100vh;
+}
+
+.manage-artworks-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Add Artwork Form */
+.add-art-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 2rem;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.add-art-form input,
+.add-art-form textarea {
+  flex: 1 1 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.add-art-form button {
+  background: #4c6ef5;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-art-form button:hover {
+  background: #364fc7;
+}
+
+/* Artworks List */
+.artworks-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.art-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.art-card:hover {
+  transform: translateY(-5px);
+}
+
+.art-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.art-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.art-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.art-card .delete-btn {
+  background: #e63946;
+  padding: 8px 14px;
+}
+
+.art-card .delete-btn:hover {
+  background: #c1121f;
+}

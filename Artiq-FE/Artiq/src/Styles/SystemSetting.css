@@ -1,0 +1,44 @@
+/* Set the background color for the full body */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa, #f7eded);
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Admin page container */
+  .admin-page {
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  
+  /* Card styling */
+  .card {
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Label for form fields inside the card */
+  .card .form-label {
+    font-weight: bold;
+  }
+  
+  /* Button inside the card */
+  .card button {
+    /* width: 100%; */
+    padding: 12px;
+    font-size: 1rem;
+    background-color: pink;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  .card button:hover {
+    background-color: rgb(207, 91, 111);
+  }
+  

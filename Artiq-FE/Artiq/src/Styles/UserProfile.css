@@ -1,0 +1,143 @@
+/* Container Styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* UserProfilePage CSS */
+
+/* Profile Section Styling */
+/* .profile-header {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.profile-header h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.profile-header p {
+  color: #555;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.profile-header img {
+  border: 3px solid #ddd;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.profile-header img:hover {
+  transform: scale(1.05);
+}
+
+/* Artworks Section */
+.artworks-section {
+  margin-top: 50px;
+}
+
+.artworks-section h3 {
+  font-size: 1.75rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Card Styling (Updated for Consistency) */
+.custom-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: auto;
+}
+
+.custom-card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  border-bottom: 2px solid #f1f1f1;
+   width: 100%;
+    height: auto;
+}
+  
+
+.card-body {
+  padding: 20px;
+  background-color: #fff;
+ 
+
+}
+
+/* .card-title {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 500;
+} */
+
+.card-text {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.card-text small {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-header {
+    text-align: center;
+  }
+
+  .profile-header img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .artworks-section h3 {
+    font-size: 1.5rem;
+  }
+
+  /* Adjust the card layout */
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+}
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.profile-header {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 20px;
+}
